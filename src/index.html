@@ -1,21 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
 
-   <head itemscope itemtype="http://schema.org/WebSite">
+<head itemscope itemtype="http://schema.org/WebSite">
 
-      <meta charset="utf-8">
-      <meta http-equiv="x-ua-compatible" content="ie=edge">
-      <meta name="msapplication-tap-highlight" content="no">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta charset="utf-8">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <meta name="msapplication-tap-highlight" content="no">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <title>Project</title>
+   <title>Project</title>
 
-      <link rel="stylesheet" href="./css/app.css">
+   <link rel="stylesheet" href="./css/app.css">
 
-   </head>
+</head>
 
-   <body itemscope itemtype="http://schema.org/WebPage">
-      <script type="text/javascript" src="./js/app.js"></script>
-      
-  </body>
+<body itemscope itemtype="http://schema.org/WebPage">
+   <div class="page">
+      <header>
+         <h1 class="logo">Teachinder</h1>
+         <div class="search">
+            <input type="text" placeholder="Name, note or age to search">
+            <button class="red-button">Search</button>
+         </div>
+      </header>
+
+      <div class="nav-row">
+         <nav>
+            <a href="#teachers">Teachers</a>
+            <a href="#statistics">Statistics</a>
+            <a href="#favorites">Favorites</a>
+            <a href="#about">About</a>
+         </nav>
+         <a href="#" class="red-button ">Add teacher</a>
+
+      </div>
+      <hr class="divider">
+
+      <main>
+         <section id="teachers">
+            <h2 class="section-title">Top Teachers</h2>
+
+            <div class="filters">
+               <span>Age</span>
+               <select>
+                  <option>18-31</option>
+               </select>
+               <span class="sep">|</span>
+               <span>Region</span>
+               <select>
+                  <option>Europe</option>
+               </select>
+               <span class="sep">|</span>
+               <span>Sex</span>
+               <select>
+                  <option>Male</option>
+               </select>
+               <span class="sep">|</span>
+               <label><input type="checkbox">Only with photo</label>
+               <span class="sep">|</span>
+               <label><input type="checkbox">Only favorites</label>
+            </div>
+
+            <div class="teacher-grid">
+               <div class="teacher-card">
+                  <div class="avatar-wrap">
+                     <div class="avatar-circle"><img class="avatar" src="assets/teacher.avif" alt="Ihor Tkachuk"></div>
+                  </div>
+                  <h3>Ihor<br>Tkachuk</h3>
+                  <div class="speciality">Chess</div>
+                  <div class="country">India</div>
+               </div>
+               <div class="teacher-card">
+                  <div class="avatar-wrap">
+                     <div class="avatar-circle"><img class="avatar" src="assets/teacher.avif" alt="Pragg Rameshbabu">
+                     </div>
+                  </div>
+                  <h3>Pragg<br>Rameshbabu</h3>
+                  <div class="speciality">Chemistry</div>
+                  <div class="country">Ukraine</div>
+               </div>
+               <div class="teacher-card">
+                  <div class="avatar-wrap">
+                     <div class="avatar-circle">
+                        <img class="avatar" src="assets/teacher.avif" alt="Floor Jansen">
+                     </div>
+                     <span class="star">★</span>
+                  </div>
+                  <h3>Floor<br>Jansen</h3>
+                  <div class="speciality">Vocal</div>
+                  <div class="country">Denmark</div>
+               </div>
+               <div class="teacher-card">
+                  <div class="avatar-wrap">
+                     <div class="avatar-circle"><img class="avatar" src="assets/teacher.avif" alt="John Burke"></div>
+                  </div>
+                  <h3>John<br>Burke</h3>
+                  <div class="speciality">Computer Science</div>
+                  <div class="country">Belgium</div>
+               </div>
+               <div class="teacher-card">
+                  <div class="avatar-wrap">
+                     <div class="avatar-circle">
+                        <img class="avatar" src="assets/teacher.avif" alt="Ari Tang">
+                     </div>
+                     <span class="star">★</span>
+                  </div>
+                  <h3>Ari<br>Tang</h3>
+                  <div class="speciality">Biology</div>
+                  <div class="country">China</div>
+               </div>
+               <div class="teacher-card">
+                  <div class="avatar-wrap">
+                     <div class="avatar-circle"><img class="avatar" src="assets/teacher.avif" alt="Rachel Andrew"></div>
+                  </div>
+                  <h3>Rachel<br>Andrew</h3>
+                  <div class="speciality">Medicine</div>
+                  <div class="country">UK</div>
+               </div>
+               <div class="teacher-card">
+                  <div class="avatar-wrap">
+                     <div class="avatar-circle">
+                        <div class="initials">A.M</div>
+                     </div>
+                  </div>
+                  <h3>Anna<br>Muzychuk</h3>
+                  <div class="speciality">Chess</div>
+                  <div class="country">Belarus</div>
+               </div>
+               <div class="teacher-card">
+                  <div class="avatar-wrap">
+                     <div class="avatar-circle">
+                        <div class="initials">R.L</div>
+                     </div>
+                  </div>
+                  <h3>Radoslaw<br>Ljuboevic</h3>
+                  <div class="speciality">Physics</div>
+                  <div class="country">Poland</div>
+               </div>
+            </div>
+
+            <hr class="divider">
+         </section>
+
+         <section id="statistics">
+            <h2 class="section-title">Statistics</h2>
+
+            <table>
+               <thead>
+                  <tr>
+                     <th>Name</th>
+                     <th>Speciality</th>
+                     <th>Age</th>
+                     <th>Gender</th>
+                     <th>Nationality</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>Daisy Alexander</td>
+                     <td>Chemistry</td>
+                     <td>28</td>
+                     <td>Female</td>
+                     <td>Vietnam</td>
+                  </tr>
+                  <tr>
+                     <td>Julia Bradley</td>
+                     <td>Math</td>
+                     <td>26</td>
+                     <td>Female</td>
+                     <td>USA</td>
+                  </tr>
+                  <tr>
+                     <td>Rita Hart</td>
+                     <td>Art</td>
+                     <td>41</td>
+                     <td>Female</td>
+                     <td>Ireland</td>
+                  </tr>
+                  <tr>
+                     <td>Jonathan Jacobs</td>
+                     <td>Math</td>
+                     <td>32</td>
+                     <td>Male</td>
+                     <td>England</td>
+                  </tr>
+                  <tr>
+                     <td>Nathaniel White</td>
+                     <td>Computer Science</td>
+                     <td>37</td>
+                     <td>Male</td>
+                     <td>Austria</td>
+                  </tr>
+                  <tr>
+                     <td>Frank Medina</td>
+                     <td>English</td>
+                     <td>43</td>
+                     <td>Male</td>
+                     <td>Italy</td>
+                  </tr>
+                  <tr>
+                     <td>Ella Curtis</td>
+                     <td>Chess</td>
+                     <td>34</td>
+                     <td>Female</td>
+                     <td>USA</td>
+                  </tr>
+                  <tr>
+                     <td>Claire Simmmons</td>
+                     <td>Art</td>
+                     <td>38</td>
+                     <td>Female</td>
+                     <td>Netherlands</td>
+                  </tr>
+                  <tr>
+                     <td>Benjamin Knight</td>
+                     <td>Biology</td>
+                     <td>44</td>
+                     <td>Male</td>
+                     <td>Scotland</td>
+                  </tr>
+                  <tr>
+                     <td>Norma Rose</td>
+                     <td>Statistics</td>
+                     <td>36</td>
+                     <td>Female</td>
+                     <td>France</td>
+                  </tr>
+               </tbody>
+            </table>
+            <div class="pagination">
+               <span class="current">1</span>
+               <span>2</span>
+               <span>3</span>
+               <span>…</span>
+               <span>Last</span>
+            </div>
+
+            <hr class="divider">
+         </section>
+
+         <section id="favorites">
+            <h2 class="section-title">Favorites</h2>
+            <div class="carousel">
+               <button class="carousel-arrow" aria-label="Previous">&lsaquo;</button>
+               <div class="carousel-track">
+                  <div class="teacher-card">
+                     <div class="avatar-wrap">
+                        <div class="avatar-circle"><img class="avatar" src="assets/teacher.avif" alt="Ihor Tkachuk">
+                        </div>
+                     </div>
+                     <h3>Ihor<br>Tkachuk</h3>
+                     <div class="country">Ukraine</div>
+                  </div>
+                  <div class="teacher-card">
+                     <div class="avatar-wrap">
+                        <div class="avatar-circle">
+                           <div class="initials">A.M</div>
+                        </div>
+                     </div>
+                     <h3>Anna<br>Makarevich</h3>
+                     <div class="country">Belarus</div>
+                  </div>
+                  <div class="teacher-card">
+                     <div class="avatar-wrap">
+                        <div class="avatar-circle"><img class="avatar" src="assets/teacher.avif" alt="John Burke"></div>
+                     </div>
+                     <h3>John<br>Burke</h3>
+                     <div class="country">Belgium</div>
+                  </div>
+                  <div class="teacher-card">
+                     <div class="avatar-wrap">
+                        <div class="avatar-circle"><img class="avatar" src="assets/teacher.avif" alt="Ari Tang"></div>
+                     </div>
+                     <h3>Ari<br>Tang</h3>
+                     <div class="country">China</div>
+                  </div>
+                  <div class="teacher-card">
+                     <div class="avatar-wrap">
+                        <div class="avatar-circle"><img class="avatar" src="assets/teacher.avif" alt="Floor Jansen">
+                        </div>
+                     </div>
+                     <h3>Floor<br>Jansen</h3>
+                     <div class="country">Denmark</div>
+                  </div>
+               </div>
+               <button class="carousel-arrow" aria-label="Next">&rsaquo;</button>
+            </div>
+
+            <hr class="divider">
+         </section>
+
+         <section id="about" class="about">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A atque facere, hic impedit itaque molestiae
+               sit tempore? Ea in mollitia natus rerum voluptates. Ea ex excepturi facere tempora. Aliquid asperiores
+               hic impedit iusto natus quaerat ratione sit? Culpa iusto optio voluptas voluptate. Enim eveniet fugit
+               iure maiores molestiae, praesentium quia.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eligendi illum in inventore ipsum odio
+               officiis omnis quisquam sed tempora?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A atque esse expedita id iusto mollitia, odit
+               sint ullam veritatis vero?</p>
+         </section>
+      </main>
+
+      <footer class="nav-row">
+         <nav>
+            <a href="#teachers">Teachers</a>
+            <a href="#statistics">Statistics</a>
+            <a href="#favorites">Favorites</a>
+            <a href="#about">About</a>
+         </nav>
+         <a href="#" class="red-button">Add teacher</a>
+      </footer>
+   </div>
+
+   <div class="modal-overlay hidden" id="add-teacher-modal">
+      <div class="modal">
+         <div class="modal-header">
+            <h3>Add Teacher</h3>
+            <button type="button" class="modal-close">&times;</button>
+         </div>
+         <div class="modal-body">
+            <form id="add-teacher-fort">
+               <div class="field">
+                  <label for="f-name">Name</label>
+                  <input type="text" id="f-name" placeholder="Enter name">
+               </div>
+               <div class="field">
+                  <label for="f-speciality">Speciality</label>
+                  <select id="f-speciality">
+                     <option>Mathematics</option>
+                     <option>Chemistry</option>
+                     <option>Biology</option>
+                     <option>Physics</option>
+                     <option>Computer Science</option>
+                     <option>Chess</option>
+                  </select>
+               </div>
+               <div class="field-row">
+                  <div class="field">
+                     <label for="f-country">Country</label>
+                     <select id="f-country">
+                        <option>Ukraine</option>
+                        <option>Poland</option>
+                        <option>Belgium</option>
+                        <option>Denmark</option>
+                        <option>China</option>
+                     </select>
+                  </div>
+                  <div class="field">
+                     <label for="f-city">City</label>
+                     <input type="text" id="f-city">
+                  </div>
+               </div>
+               <div class="field-row">
+                  <div class="field">
+                     <label for="f-email">Email</label>
+                     <input type="email" id="f-email">
+                  </div>
+                  <div class="field">
+                     <label for="f-phone">Phone</label>
+                     <input type="tel" id="f-phone">
+                  </div>
+               </div>
+               <div class="field half-field">
+                  <label for="f-dob">Date of birth</label>
+                  <input type="date" id="f-dob">
+               </div>
+               <div class="field inline-field">
+                  <span>Sex</span>
+                  <label><input type="radio" name="sex" value="male"> Male</label>
+                  <label><input type="radio" name="sex" value="female"> Female</label>
+               </div>
+               <div class="field inline-field">
+                  <span>Background color</span>
+                  <div class="color-picker-wrap">
+                     <input type="color" value="#333">
+                  </div>
+               </div>
+               <div class="field">
+                  <label for="f-notes">Notes (optional)</label>
+                  <textarea id="f-notes" rows="4"></textarea>
+               </div>
+               <button type="submit" class="modal-submit-btn">Add</button>
+            </form>
+         </div>
+      </div>
+   </div>
+
+   <div class="modal-overlay hidden" id="teacher-info-modal">
+      <div class="modal modal-teacher-info">
+         <div class="modal-header">
+            <h3>Teacher Info</h3>
+            <button class="modal-close" aria-label="Close">&times;</button>
+         </div>
+         <div class="modal-body">
+            <div class="teacher-info-top">
+               <img src="assets/teacher.avif" alt="Ihor Tkachuk" class="info-photo">
+               <div class="info-meta">
+                  <span class="info-star">★</span>
+                  <h2 class="info-name">Ihor Tkachuk</h2>
+                  <h4 class="info-speciality">Chemistry</h4>
+                  <p class="info-location">Kyiv, Ukraine</p>
+                  <p class="info-age-gender">35, Male</p>
+                  <p class="info-email"><a href="mailto:ihor_tkachuk@domain.com">ihor_tkachuk@domain.com</a></p>
+                  <p class="info-phone">+380964993252</p>
+               </div>
+            </div>
+            <p class="info-description">
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem consectetur culpa cumque, distinctio
+               dolor dolore dolorem doloremque ea explicabo facilis nam nesciunt nisi pariatur perspiciatis porro quis
+               similique temporibus veniam veritatis? A ab ad, aliquam amet consequatur cupiditate debitis deserunt
+               doloribus dolorum earum eius eos minus nostrum odit omnis perferendis...
+            </p>
+            <a href="#" class="toggle-map-link">toggle map</a>
+         </div>
+      </div>
+   </div>
+
+   <script type="text/javascript" src="./js/app.js"></script>
+</body>
+
 </html>
