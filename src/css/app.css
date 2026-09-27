@@ -2,22 +2,22 @@
 @import url('./normalize.css');
 
 :root {
-  --primary-color: #f75c49;
-  --primary-hover: #cc4836;
-  --text-dark: #222222;
-  --text-muted: #888888;
-  --border-color: #e0e0e0;
-  --bg-zebra: #f9f9f9;
-  --font-main: 'Roboto', Arial, sans-serif;
-  
-  accent-color: var(--primary-color);
+    --primary-color: #f75c49;
+    --primary-hover: #cc4836;
+    --text-dark: #222222;
+    --text-muted: #888888;
+    --border-color: #e0e0e0;
+    --bg-zebra: #f9f9f9;
+    --font-main: 'Roboto', Arial, sans-serif;
+
+    accent-color: var(--primary-color);
 }
 
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: var(--font-main);
     color: var(--text-dark);
     margin: 0;
@@ -29,41 +29,41 @@ header,
 .nav-row,
 main,
 footer {
-  max-width: 1050px;
-  margin-left: auto;
-  margin-right: auto;
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-header{
-    display: flex;    
+header {
+    display: flex;
     margin-bottom: 25px;
     justify-content: space-between;
-    align-items: center;             
+    align-items: center;
 }
 
-.logo{
-    margin:0;
+.logo {
+    margin: 0;
     font-size: 38px;
     font-weight: bold;
     color: #ffffff;
-  text-shadow:
-    -1.5px -1.5px 0 var(--primary-color),
-     1.5px  1px 0 #000000;
+    text-shadow:
+        -1.5px -1.5px 0 var(--primary-color),
+        1.5px 1px 0 #000000;
 }
 
-.logo:hover{
+.logo:hover {
     color: #ffffff;
-  text-shadow:
-    -3px -1.5px 0 var(--primary-color),
-     4px  1px 0 #000000;
+    text-shadow:
+        -3px -1.5px 0 var(--primary-color),
+        4px 1px 0 #000000;
 }
 
-.search{
+.search {
     display: flex;
     gap: 10px;
 }
 
-.search input{
+.search input {
     width: 240px;
     padding: 8px 12px;
     border: 1px solid var(--border-color);
@@ -72,11 +72,11 @@ header{
     outline: none;
 }
 
-.search input:hover{
+.search input:hover {
     width: 300px;
 }
 
-.red-button{
+.red-button {
     padding: 8px 20px;
     border: 1px solid var(--primary-color);
     background-color: #fff;
@@ -86,16 +86,17 @@ header{
     text-decoration: none;
 }
 
-a.red-button{
+a.red-button {
     font-size: 20px;
 }
-.red-button:hover{
+
+.red-button:hover {
     background-color: var(--primary-color);
     color: #fff;
 
 }
 
-.nav-row{
+.nav-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -108,25 +109,25 @@ a.red-button{
     gap: 30px;
 }
 
-.nav-row nav a{
+.nav-row nav a {
     text-decoration: none;
     color: var(--primary-color);
     font-size: 16px;
     font-weight: 500;
 }
 
-.nav-row nav a:hover{
+.nav-row nav a:hover {
     color: var(--primary-hover);
 }
 
-.section-title{
+.section-title {
     font-size: 28px;
     font-weight: 700;
     margin: 0 0 25px 0;
     color: var(--text-dark);
 }
 
-.filters{
+.filters {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -136,37 +137,37 @@ a.red-button{
 }
 
 .filters select {
-  padding: 8px 10px;
-  border: 1px solid var(--text-dark);
-  border-radius: 2px;
-  background-color: #fff;
-  font-size: 14px;
-  color: var(--text-dark);
-  outline: none;
-  cursor: pointer;
+    padding: 8px 10px;
+    border: 1px solid var(--text-dark);
+    border-radius: 2px;
+    background-color: #fff;
+    font-size: 14px;
+    color: var(--text-dark);
+    outline: none;
+    cursor: pointer;
 }
 
 .filters label {
-  display: flex;                   
-  align-items: center;
-  gap: 4px;                       
-  cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
 }
 
-.teacher-grid{
+.teacher-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     column-gap: 15px;
-    row-gap: 35px; 
-    margin-bottom: 45px; 
+    row-gap: 35px;
+    margin-bottom: 45px;
 }
 
-.teacher-card{
+.teacher-card {
     text-align: center;
     cursor: pointer;
 }
 
-.avatar-wrap{
+.avatar-wrap {
     position: relative;
     width: 105px;
     height: 105px;
@@ -180,48 +181,49 @@ a.red-button{
     border: 3px solid var(--primary-color);
     overflow: hidden;
     transition: border-color 0.3s ease;
-     background-color: #ffffff;
+    background-color: #ffffff;
 }
+
 .avatar-circle img.avatar {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: border-color 0.3s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: border-color 0.3s ease;
 }
 
 .avatar-wrap .initials {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--primary-color);
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  transition: border-color 0.3s ease;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: border-color 0.3s ease;
 }
 
 .avatar-wrap:hover .avatar-circle {
-  border-color: var(--primary-hover);
+    border-color: var(--primary-hover);
 }
 
 .avatar-wrap:hover img.avatar,
 .avatar-wrap:hover .initials {
-  transform: scale(1.18);
+    transform: scale(1.18);
 }
 
-.star{
+.star {
     position: absolute;
     top: 3px;
-    right:-2px;
+    right: -2px;
     font-size: 24px;
     color: #f1c40f;
-  z-index: 2;
+    z-index: 2;
 }
 
-.teacher-card h3{
+.teacher-card h3 {
     margin: 0 auto 10px auto;
     font-size: 18px;
     font-weight: 700;
@@ -229,35 +231,35 @@ a.red-button{
     text-align: center;
 }
 
-.teacher-card .speciality{
+.teacher-card .speciality {
     font-size: 13px;
     color: var(--text-muted);
     margin-bottom: 10px;
 }
 
-.teacher-card .country{
+.teacher-card .country {
     font-size: 12px;
     color: var(--text-muted);
 }
 
-hr.divider{
+hr.divider {
     border: none;
     border-top: 1px solid var(--text-dark);
-    margin: 40px auto; 
+    margin: 40px auto;
     width: 450px;
     max-width: 50%;
 }
 
 /*STATISTICS*/
 
-table{
+table {
     width: 100%;
     font-size: 16px;
     margin-bottom: 20px;
     color: var(--text-dark);
 }
 
-thead th{
+thead th {
     padding: 12px 14px;
     font-size: 20px;
     color: var(--text-dark);
@@ -269,26 +271,26 @@ thead th{
 
 thead th:first-child,
 tbody td:first-child {
-  text-align: left;
-  padding-left: 10px;
+    text-align: left;
+    padding-left: 10px;
 }
 
-tbody td{
+tbody td {
     padding: 12px 14px;
     text-align: center;
     color: #333333;
 }
 
-tbody tr:nth-child(even){
+tbody tr:nth-child(even) {
     background-color: #faf7fa;
 }
 
-thead th:hover{
-    background-color:#faf7fa;
+thead th:hover {
+    background-color: #faf7fa;
     border-bottom: 4px solid var(--text-dark);
 }
 
-.pagination{
+.pagination {
     display: flex;
     gap: 16px;
     font-size: 14px;
@@ -296,17 +298,17 @@ thead th:hover{
     margin-bottom: 40px;
 }
 
-.pagination span.current{
+.pagination span.current {
     color: var(--text-dark);
 }
 
-.pagination span:hover{
+.pagination span:hover {
     color: #000000;
 }
 
 /*FAVOURITES*/
 
-.carousel{
+.carousel {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -314,31 +316,250 @@ thead th:hover{
     gap: 10px;
 }
 
-.carousel-track{
+.carousel-track {
     flex: 1;
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
     column-gap: 15px;
 }
 
-.carousel-arrow{
+.carousel-arrow {
     background: none;
     border: none;
     font-size: 80px;
     color: var(--text-muted);
 }
 
-.carousel-arrow:hover{
+.carousel-arrow:hover {
     color: #000000;
 }
 
-.about{
+.about {
     margin-bottom: 40px;
     text-align: left;
 }
 
-.about p{
+.about p {
     color: var(--text-dark);
     font-size: 14px;
     margin: 0 0 16px 0;
+}
+
+
+/*MODAL ADD TEACHER*/
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-overlay.hidden {
+    display: none;
+}
+
+.modal {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    max-height: 700px;
+    max-width: 400px;
+    text-align: left;
+}
+
+.modal-header {
+    background-color: #333333;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 26px;
+}
+
+.modal-body {
+    padding: 22px 26px 26px 26px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.field label,
+.field span {
+    font-size: 14px;
+    padding-bottom: 4px;
+    color: var(--text-muted);
+}
+
+.field input[type="text"],
+.field input[type="email"],
+.field input[type="tel"],
+.field input[type="date"],
+.field select,
+.field textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #c4c4c4;
+    border-radius: 2px;
+    font-size: 14px;
+    color: var(--text-dark);
+    background-color: #fff;
+    height: 32px;
+}
+
+.field textarea {
+    margin-bottom: 30px;
+    height: 85px;
+}
+
+.field-row {
+    display: flex;
+    gap: 16px;
+}
+
+.field-row .field {
+    flex: 1;
+}
+
+.half-field {
+    width: calc(50% - 8px);
+}
+
+.inline-field {
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 14px;
+}
+
+
+.inline-field label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--text-dark);
+    font-size: 14px;
+}
+
+.color-picker-wrap input[type="color"] {
+    width: 38px;
+    height: 26px;
+    padding: 60;
+    border: 1px solid #c4c4c4;
+    background: none;
+}
+
+.modal-submit-btn {
+    width: 100%;
+    padding: 12px;
+    color: var(--primary-color);
+    background-color: #fff;
+    font-size: 20px;
+    border: 1px solid var(--primary-color);
+}
+
+.modal-submit-btn:hover {
+    color: #ffffff;
+    background-color: var(--primary-color);
+}
+
+.field select {
+    border-radius: 2px;
+}
+
+/*MODAL INFO*/
+
+.modal-teacher-info {
+    max-width: 620px;
+    height: auto;
+}
+
+.info-photo {
+    float: left;
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    margin-right: 25px;
+    margin-bottom: 15px;
+}
+
+.teacher-info-top::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.info-meta {
+    position: relative;
+}
+
+.info-star {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 26px;
+    color: #f1c40f;
+}
+
+.info-name {
+    margin: 0 0 10px 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+
+.info-speciality {
+    margin: 0 0 16px 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.info-location,
+.info-age-gender,
+.info-email,
+.info-phone {
+    margin: 0 0 8px 0;
+    font-size: 13px;
+    color: var(--text-dark);
+}
+
+.info-email a,
+.toggle-map-link {
+    color: #1fa2b8;
+    text-decoration: underline;
+}
+
+.info-description {
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--text-dark);
+    margin: 15px 0 12px 0;
+}
+
+.toggle-map-link {
+    font-size: 13px;
 }

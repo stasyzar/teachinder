@@ -305,88 +305,106 @@
   </footer>
   </div>
 
-  <!-- <div class="modal-overlay hidden" id="add-teacher-modal">
+  <div class="modal-overlay hidden" id="add-teacher-modal">
    <div class="modal">
       <div class="modal-header">
-         <span>Add Teacher</span>
-         <button type="button"></button>
+         <h3>Add Teacher</h3>
+         <button type="button" class="modal-close">&times;</button>
       </div>
       <div class="modal-body">
-         <form id="add-teacher-form">
+         <form id="add-teacher-fort">
             <div class="field">
-          <label for="f-name">Name</label>
-          <input type="text" id="f-name" placeholder="Enter name">
-        </div>
-
-        <div class="field">
-          <label for="f-speciality">Speciality</label>
-          <select id="f-speciality">
-            <option>Mathematics</option>
-            <option>Chemistry</option>
-            <option>Biology</option>
-            <option>Physics</option>
-            <option>Computer Science</option>
-            <option>Chess</option>
-          </select>
-        </div>
-
-        <div class="field-row">
-          <div class="field">
-            <label for="f-country">Country</label>
-            <select id="f-country">
-              <option>Ukraine</option>
-              <option>Poland</option>
-              <option>Belgium</option>
-              <option>Denmark</option>
-              <option>China</option>
+               <label for="f-name">Name</label>
+               <input type="text" id="f-name" placeholder="Enter name">
+            </div>
+            <div class="field">
+            <label for="f-speciality">Speciality</label>
+            <select id="f-speciality">
+              <option>Mathematics</option>
+              <option>Chemistry</option>
+              <option>Biology</option>
+              <option>Physics</option>
+              <option>Computer Science</option>
+              <option>Chess</option>
             </select>
           </div>
-          <div class="field">
-            <label for="f-city">City</label>
-            <input type="text" id="f-city">
+          <div class="field-row">
+            <div class="field">
+              <label for="f-country">Country</label>
+              <select id="f-country">
+                <option>Ukraine</option>
+                <option>Poland</option>
+                <option>Belgium</option>
+                <option>Denmark</option>
+                <option>China</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-city">City</label>
+              <input type="text" id="f-city">
+            </div>
           </div>
-        </div>
-        <div class="field-row">
-          <div class="field">
-            <label for="f-email">Email</label>
-            <input type="email" id="f-email">
+          <div class="field-row">
+            <div class="field">
+              <label for="f-email">Email</label>
+              <input type="email" id="f-email">
+            </div>
+            <div class="field">
+              <label for="f-phone">Phone</label>
+              <input type="tel" id="f-phone">
+            </div>
           </div>
-          <div class="field">
-            <label for="f-phone">Phone</label>
-            <input type="tel" id="f-phone">
+          <div class="field half-field">
+            <label for="f-dob">Date of birth</label>
+            <input type="date" id="f-dob">
           </div>
-        </div>
-
-        <div class="field">
-          <label for="f-dob">Date of birth</label>
-          <input type="date" id="f-dob">
-        </div>
-        <div class="field">
-          <label>Sex</label>
-          <div class="radio-group">
+          <div class="field inline-field">
+            <span>Sex</span>
             <label><input type="radio" name="sex" value="male"> Male</label>
             <label><input type="radio" name="sex" value="female"> Female</label>
           </div>
-        </div>
-
-        <div class="field">
-          <label>Background color</label>
-          <div class="color-field">
-            <span>🎨</span>
-            <input type="color" value="#f2603d">
+          <div class="field inline-field">
+            <span>Background color</span>
+            <div class="color-picker-wrap">
+              <input type="color" value="#333">
+            </div>
           </div>
-        </div>
-        <div class="field">
-          <label for="f-notes">Notes (optional)</label>
-          <textarea id="f-notes"></textarea>
-        </div>
-        <button type="submit">Add</button>
-        </form>
+          <div class="field">
+            <label for="f-notes">Notes (optional)</label>
+            <textarea id="f-notes" rows="4"></textarea>
+          </div>
+          <button type="submit" class="modal-submit-btn">Add</button>
+         </form>
       </div>
    </div>
-  </div> -->
+  </div>
 
-
+  <div class="modal-overlay " id="teacher-info-modal">
+    <div class="modal modal-teacher-info">
+      <div class="modal-header">
+         <h3>Teacher Info</h3>
+         <button class="modal-close" aria-label="Close">&times;</button>
+      </div>
+      <div class="modal-body">
+         <div class="teacher-info-top">
+            <img src="assets/teacher.avif" alt="Ihor Tkachuk" class="info-photo">
+            <div class="info-meta">
+               <span class="info-star">★</span>
+               <h2 class="info-name">Ihor Tkachuk</h2>
+               <h4 class="info-speciality">Chemistry</h4>
+               <p class="info-location">Kyiv, Ukraine</p>
+               <p class="info-age-gender">35, Male</p>
+               <p class="info-email"><a href="mailto:ihor_tkachuk@domain.com">ihor_tkachuk@domain.com</a></p>
+               <p class="info-phone">+380964993252</p>
+            </div>
+         </div>
+         <p class="info-description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem consectetur culpa cumque, distinctio dolor dolore dolorem doloremque ea explicabo facilis nam nesciunt nisi pariatur perspiciatis porro quis similique temporibus veniam veritatis? A ab ad, aliquam amet consequatur cupiditate debitis deserunt doloribus dolorum earum eius eos minus nostrum odit omnis perferendis...
+         </p>
+         <a href="#" class="toggle-map-link">toggle map</a>
+      </div>
+    </div>
+  </div>
 
   <script type="text/javascript" src="./js/app.js"></script>
 </body>
