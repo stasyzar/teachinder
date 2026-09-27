@@ -563,3 +563,51 @@ thead th:hover {
 .toggle-map-link {
     font-size: 13px;
 }
+
+@media (max-width: 768px) {
+  header,
+  .nav-row {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .nav-row nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .filters {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .filters .sep {
+    display: none;
+  }
+
+  .teacher-grid {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 25px;
+  }
+
+  #statistics {
+    overflow-x: auto;
+  }
+
+  .carousel-track {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .carousel-arrow {
+    font-size: 45px;
+  }
+
+  .info-photo {
+    float: none;
+    margin: 0 auto 15px auto;
+    display: block;
+  }
+}
