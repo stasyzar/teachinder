@@ -15,11 +15,12 @@
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
+   <div class="page">
    <header>
       <h1 class="logo">Teachinder</h1>
       <div class="search">
          <input type="text" placeholder="Name, note or age to search">
-         <button>Search</button>
+         <button class="red-button">Search</button>
       </div>
    </header>
 
@@ -30,8 +31,10 @@
          <a href="#favorites">Favorites</a>
          <a href="#about">About</a>
       </nav>
-      <a href="#">Add teacher</a>
+      <a href="#" class="red-button ">Add teacher</a>
+      
    </div>
+   <hr class="divider">
 
    <main>
       <section id="teachers">
@@ -54,61 +57,82 @@
          </select>
          <span class="sep">|</span>
          <label><input type="checkbox">Only with photo</label>
+         <span class="sep">|</span>
          <label><input type="checkbox">Only favorites</label>
       </div>
 
       <div class="teacher-grid">
          <div class="teacher-card">
-            <div class="avatar-wrap"><img class="avatar" src="assets/ihor.jpg" alt="Ihor Tkachuk"></div>
-            <h3>Ihor Tkachuk</h3>
+            <div class="avatar-wrap">
+               <div class="avatar-circle"><img class="avatar" src="assets/teacher.avif" alt="Ihor Tkachuk"></div>
+            </div>
+            <h3>Ihor<br>Tkachuk</h3>
             <div class="speciality">Chess</div>
             <div class="country">India</div>
          </div>
          <div class="teacher-card">
-            <div class="avatar-wrap"><img class="avatar" src="assets/ihor.jpg" alt="Pragg Rameshbabu"></div>
-            <h3>Pragg Rameshbabu</h3>
+            <div class="avatar-wrap">
+               <div class="avatar-circle"><img class="avatar" src="assets/teacher.avif" alt="Pragg Rameshbabu"></div>
+            </div>
+            <h3>Pragg<br>Rameshbabu</h3>
             <div class="speciality">Chemistry</div>
             <div class="country">Ukraine</div>
          </div>
          <div class="teacher-card">
             <div class="avatar-wrap">
-               <img class="avatar" src="assets/ihor.jpg" alt="Floor Jansen">
+               <div class="avatar-circle">
+                  <img class="avatar" src="assets/teacher.avif" alt="Floor Jansen">
+               </div>
                <span class="star">★</span>
             </div>
-            <h3>Floor Jansen</h3>
+            <h3>Floor<br>Jansen</h3>
             <div class="speciality">Vocal</div>
             <div class="country">Denmark</div>
          </div>
          <div class="teacher-card">
-            <div class="avatar-wrap"><img class="avatar" src="assets/ihor.jpg" alt="John Burke"></div>
-            <h3>John Burke</h3>
+            <div class="avatar-wrap">
+               <div class="avatar-circle"><img class="avatar" src="assets/teacher.avif" alt="John Burke"></div>
+            </div>
+            <h3>John<br>Burke</h3>
             <div class="speciality">Computer Science</div>
             <div class="country">Belgium</div>
          </div>
          <div class="teacher-card">
             <div class="avatar-wrap">
-               <img class="avatar" src="assets/ihor.jpg" alt="Ari Tang">
+               <div class="avatar-circle">
+                  <img class="avatar" src="assets/teacher.avif" alt="Ari Tang">
+               </div>
                <span class="star">★</span>
             </div>
-            <h3>Ari Tang</h3>
+            <h3>Ari<br>Tang</h3>
             <div class="speciality">Biology</div>
             <div class="country">China</div>
          </div>
          <div class="teacher-card">
-            <div class="avatar-wrap"><img class="avatar" src="assets/ihor.jpg" alt="Rachel Andrew"></div>
-            <h3>Rachel Andrew</h3>
+            <div class="avatar-wrap">
+               <div class="avatar-circle"><img class="avatar" src="assets/teacher.avif" alt="Rachel Andrew"></div>
+            </div>
+            <h3>Rachel<br>Andrew</h3>
             <div class="speciality">Medicine</div>
             <div class="country">UK</div>
          </div>
          <div class="teacher-card">
-            <div class="avatar-wrap"><img class="avatar" src="assets/ihor.jpg" alt="Anna Muzychuk"></div>
-            <h3>Anna Muzychuk</h3>
+            <div class="avatar-wrap">
+               <div class="avatar-circle">
+                  <div class="initials">A.M</div>
+               </div>
+            </div>
+            <h3>Anna<br>Muzychuk</h3>
             <div class="speciality">Chess</div>
             <div class="country">Belarus</div>
          </div>
          <div class="teacher-card">
-            <div class="avatar-wrap"><img class="avatar" src="assets/ihor.jpg" alt="Radoslaw Ljuboevic"></div>
-            <h3>Radoslaw Ljuboevic</h3>
+            <div class="avatar-wrap">
+               <div class="avatar-circle">
+                  <div class="initials">R.L</div>
+               </div>
+            </div>
+            <h3>Radoslaw<br>Ljuboevic</h3>
             <div class="speciality">Physics</div>
             <div class="country">Poland</div>
          </div>
@@ -217,35 +241,47 @@
    <section id="favorites">
       <h2 class="section-title">Favorites</h2>
       <div class="carousel">
-         <button class="carousel-arrow"></button>
+         <button class="carousel-arrow" aria-label="Previous">&lsaquo;</button>
          <div class="carousel-track">
             <div class="teacher-card">
-               <div class="avatar-wrap"><img class="avatar" src="assets/fav_ihor.jpg" alt="Ihor Tkachuk"></div>
-               <h3>Ihor Tkachuk</h3>
+               <div class="avatar-wrap">
+                  <div class="avatar-circle"><img class="avatar" src="assets/teacher.avif" alt="Ihor Tkachuk"></div>
+               </div>
+               <h3>Ihor<br>Tkachuk</h3>
                <div class="country">Ukraine</div>
             </div>
             <div class="teacher-card">
-               <div class="avatar-wrap"><img class="avatar" src="assets/fav_ihor.jpg" alt="Anna Makarevich"></div>
-               <h3>Anna Makarevich</h3>
+               <div class="avatar-wrap">
+                  <div class="avatar-circle">
+                     <div class="initials">A.M</div>
+                  </div>
+               </div>
+               <h3>Anna<br>Makarevich</h3>
                <div class="country">Belarus</div>
             </div>
             <div class="teacher-card">
-               <div class="avatar-wrap"><img class="avatar" src="assets/fav_ihor.jpg" alt="John Burke"></div>
-               <h3>John Burke</h3>
+               <div class="avatar-wrap">
+                  <div class="avatar-circle"><img class="avatar" src="assets/teacher.avif" alt="John Burke"></div>
+               </div>
+               <h3>John<br>Burke</h3>
                <div class="country">Belgium</div>
             </div>
             <div class="teacher-card">
-               <div class="avatar-wrap"><img class="avatar" src="assets/fav_ari.jpg" alt="Ari Tang"></div>
-               <h3>Ari Tang</h3>
+               <div class="avatar-wrap">
+                  <div class="avatar-circle"><img class="avatar" src="assets/teacher.avif" alt="Ari Tang"></div>
+               </div>
+               <h3>Ari<br>Tang</h3>
                <div class="country">China</div>
             </div>
             <div class="teacher-card">
-               <div class="avatar-wrap"><img class="avatar" src="assets/fav_floor.jpg" alt="Floor Jansen"></div>
-               <h3>Floor Jansen</h3>
+               <div class="avatar-wrap">
+                  <div class="avatar-circle"><img class="avatar" src="assets/teacher.avif" alt="Floor Jansen"></div>
+               </div>
+               <h3>Floor<br>Jansen</h3>
                <div class="country">Denmark</div>
             </div>
          </div>
-         <button class="carousel-arrow"></button>
+         <button class="carousel-arrow" aria-label="Next">&rsaquo;</button>
       </div>
 
       <hr class="divider">
@@ -258,15 +294,99 @@
   </section>
    </main>
 
-  <footer class="bottom-nav">
+  <footer class="nav-row">
    <nav>
       <a href="#teachers">Teachers</a>
       <a href="#statistics">Statistics</a>
       <a href="#favorites">Favorites</a>
       <a href="#about">About</a>
     </nav>
-    <a href="#" class="btn-outline">Add teacher</a>
+    <a href="#" class="red-button">Add teacher</a>
   </footer>
+  </div>
+
+  <!-- <div class="modal-overlay hidden" id="add-teacher-modal">
+   <div class="modal">
+      <div class="modal-header">
+         <span>Add Teacher</span>
+         <button type="button"></button>
+      </div>
+      <div class="modal-body">
+         <form id="add-teacher-form">
+            <div class="field">
+          <label for="f-name">Name</label>
+          <input type="text" id="f-name" placeholder="Enter name">
+        </div>
+
+        <div class="field">
+          <label for="f-speciality">Speciality</label>
+          <select id="f-speciality">
+            <option>Mathematics</option>
+            <option>Chemistry</option>
+            <option>Biology</option>
+            <option>Physics</option>
+            <option>Computer Science</option>
+            <option>Chess</option>
+          </select>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="f-country">Country</label>
+            <select id="f-country">
+              <option>Ukraine</option>
+              <option>Poland</option>
+              <option>Belgium</option>
+              <option>Denmark</option>
+              <option>China</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-city">City</label>
+            <input type="text" id="f-city">
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="f-email">Email</label>
+            <input type="email" id="f-email">
+          </div>
+          <div class="field">
+            <label for="f-phone">Phone</label>
+            <input type="tel" id="f-phone">
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="f-dob">Date of birth</label>
+          <input type="date" id="f-dob">
+        </div>
+        <div class="field">
+          <label>Sex</label>
+          <div class="radio-group">
+            <label><input type="radio" name="sex" value="male"> Male</label>
+            <label><input type="radio" name="sex" value="female"> Female</label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Background color</label>
+          <div class="color-field">
+            <span>🎨</span>
+            <input type="color" value="#f2603d">
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-notes">Notes (optional)</label>
+          <textarea id="f-notes"></textarea>
+        </div>
+        <button type="submit">Add</button>
+        </form>
+      </div>
+   </div>
+  </div> -->
+
+
 
   <script type="text/javascript" src="./js/app.js"></script>
 </body>
